@@ -58,10 +58,10 @@ router.post(
   }
 })
 
-// @route   POST api/contacts/:id
+// @route   PUT api/contacts/:id
 // @desc    Update contact
 // @access  Private
-router.post('/:id', auth, async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
   const { name, email, phone, type } = req.body
    
   // Build contact object

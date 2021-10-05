@@ -59,8 +59,6 @@ const ContactState = props => {
         type: CONTACT_ERROR,
         payload: err.response.msg })
     }
-
-    dispatch({ type: ADD_CONTACT, payload: contact })
   }
 
   // Delete Contact
